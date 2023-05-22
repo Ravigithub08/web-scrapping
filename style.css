@@ -1,0 +1,78 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+
+    background: url("cork.jpg");
+    padding: 20px;
+    margin: 0px;
+
+}
+
+
+#frm{
+    display:flex;
+    margin-bottom: 20px;
+
+
+}
+#text{
+
+    flex-grow: 1;
+}
+#text,#btn_add{
+
+    padding: 10px;
+    border: 0px;
+    font-size: 18px;
+    color: black;
+   }
+#btn_add{
+
+background-color: blue;
+
+}
+#board{
+display: grid;
+grid-template-columns:repeat(4,1fr);
+grid-gap: 10px;
+color: black;
+}
+
+.note{
+position: relative;
+background: #fdff8a;
+color: black;
+padding: 10px;
+box-shadow: 10px 15px 15px black;
+
+}
+.del{
+position: absolute;
+top: 5px;
+right:5px;
+color: red;
+font-size: 20px;
+
+
+
+}
+.lock{
+
+pointer-events: none;
+color: #818181;
+background: #d3d3d3;
+
+}
+.lock .del{
+    display: none;
+}
+.hint{
+    border: 2px dashed red;
+
+}
+.active{
+    border: 2px dashed red;
+    background:lightblue;
+}
